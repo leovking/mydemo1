@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<include file="/com/juhu/scm/config/struts-send.xml"></include>
+	<include file="/com/juhu/scm/config/struts-users.xml"></include>
+	<include file="/com/juhu/scm/config/struts-vendor.xml"></include>
+	<include file="/com/juhu/scm/config/struts-factory.xml"></include>
+	<include file="/com/juhu/scm/config/struts-product.xml"></include>
+	<include file="/com/juhu/scm/config/struts-material.xml"></include>
+	<include file="/com/juhu/scm/config/struts-chima.xml"></include>
+</struts>    

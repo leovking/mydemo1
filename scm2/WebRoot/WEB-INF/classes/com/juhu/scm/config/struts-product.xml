@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="product" namespace="/product" extends="struts-default">
+		<action name="ProductAction_*" class="productAction" method="{1}">
+		
+		<!-- 保存 -->
+			<result name="saveOK" type="redirectAction">
+				<param name="actionName">ProductAction</param>
+				<param name="nameSpace">/product</param>
+				<param name="method">query</param>
+			</result>
+			<!-- 编辑 -->
+			<result name="updateOK" type="redirectAction">
+				<param name="actionName">ProductAction</param>
+				<param name="nameSpace">/product</param>
+				<param name="method">query</param>
+			</result>
+			<!-- 删除 -->
+			<result name="deleteOK" type="redirectAction">
+				<param name="actionName">ProductAction</param>
+				<param name="nameSpace">/product</param>
+				<param name="method">query</param>
+			</result>
+			
+			<result name="getOK" type="dispatcher">/WEB-INF/product/update.jsp</result>
+			<result name="queryOK" type="dispatcher">/WEB-INF/product/query.jsp</result>
+		</action>
+		
+	</package>
+</struts>    

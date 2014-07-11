@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<c:set var="scm" value="${pageContext.request.contextPath}"></c:set>
+<script type="text/javascript" src="${scm}/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="${scm}/easyui1.3.5/jquery.easyui.min.js"></script>
+<link rel="stylesheet" href="${scm}/easyui1.3.5/themes/icon.css" type="text/css" />
+<link rel="stylesheet" href="${scm}/easyui1.3.5/themes/default/easyui.css" type="text/css" />
+<link rel="stylesheet" href="${scm}/public/common.css" type="text/css" />
+

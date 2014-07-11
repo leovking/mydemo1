@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="send" namespace="/" extends="struts-default">
+		<action name="SendAction_index" class="com.juhu.scm.action.SendAction" method="index">
+			<result name="index" type="dispatcher">/WEB-INF/index/index.jsp</result>
+		</action>
+		<action name="send_*_*" class="com.juhu.scm.action.SendAction" method="send">
+			<result name="send" type="dispatcher">/WEB-INF/{1}/{2}.jsp</result>
+		</action>
+	</package>
+</struts>    
